@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ComingSoonViewController" customModule="MachineTest" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBack" destination="SHs-XZ-emf" id="Rrr-FK-AQf"/>
+                <outlet property="labelTitle" destination="eYV-3I-AoA" id="3kZ-8J-Jgr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Nm-Ew-oUA">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYV-3I-AoA">
+                            <rect key="frame" x="180" y="46" width="54" height="30.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHs-XZ-emf">
+                            <rect key="frame" x="5" y="36" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fo2-WY-ir5"/>
+                                <constraint firstAttribute="width" constant="50" id="fwS-c0-ujE"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="chevron.left" catalog="system"/>
+                            <connections>
+                                <action selector="handlerToCloseView:" destination="-1" eventType="touchUpInside" id="vdY-RJ-Chd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="SHs-XZ-emf" firstAttribute="leading" secondItem="3Nm-Ew-oUA" secondAttribute="leading" constant="5" id="0FM-Yc-rvv"/>
+                        <constraint firstItem="eYV-3I-AoA" firstAttribute="centerY" secondItem="3Nm-Ew-oUA" secondAttribute="centerY" constant="16" id="38M-ih-boY"/>
+                        <constraint firstItem="eYV-3I-AoA" firstAttribute="centerX" secondItem="3Nm-Ew-oUA" secondAttribute="centerX" id="6zN-8O-YtV"/>
+                        <constraint firstItem="SHs-XZ-emf" firstAttribute="centerY" secondItem="3Nm-Ew-oUA" secondAttribute="centerY" constant="16" id="VU9-Iw-Mo1"/>
+                        <constraint firstAttribute="height" constant="90" id="fvt-0p-Kv4"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LA-eI-GrR">
+                    <rect key="frame" x="151" y="436.5" width="112.5" height="23.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2LA-eI-GrR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L09-Yp-tsy"/>
+                <constraint firstItem="2LA-eI-GrR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="PDD-s3-Dgd"/>
+                <constraint firstItem="3Nm-Ew-oUA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WcI-rQ-mj2"/>
+                <constraint firstItem="3Nm-Ew-oUA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="k8n-qI-VcV"/>
+                <constraint firstAttribute="trailing" secondItem="3Nm-Ew-oUA" secondAttribute="trailing" id="m57-Ru-YHt"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="111"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
+    </resources>
+</document>
